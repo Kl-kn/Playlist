@@ -1,0 +1,112 @@
+/* Importamos la fuente de lujo */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    font-family: 'Great Vibes', cursive;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor del título "Playlist de Nuestro Aniversario" */
+.titulo-container {
+    background-color: white;
+    color: #a1925a;
+    border: 2px solid #C5B358;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+    text-align: center;
+    width: 90vw;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* Introducción debajo del título */
+.introduccion {
+    font-size: 1.5rem;
+    color: #a1925a;
+    text-align: center;
+    width: 90vw;
+    max-width: 600px;
+    margin-bottom: 20px;
+    font-family: 'Great Vibes', cursive;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #C5B358;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Reproductor de audio */
+audio {
+    margin-top: 20px;
+    width: 90vw;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 2px solid #C5B358;
+    background-color: white;
+}
+
+/* Contenedor de la lista de canciones */
+.playlist-container {
+    margin-top: 20px;
+}
+
+/* Lista de canciones */
+#playlist {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 90vw;
+    max-width: 600px;
+}
+
+/* Estilo para cada canción */
+#playlist li {
+    background-color: white;
+    color: #a1925a;
+    border: 2px solid #C5B358;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    font-family: 'Great Vibes', cursive;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#playlist li audio {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    .titulo-container {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .introduccion {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    #playlist li {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    audio {
+        font-size: 1.5rem;
+    }
+}
