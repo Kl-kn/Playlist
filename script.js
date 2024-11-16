@@ -5,9 +5,7 @@ const canciones = [
     { nombre: "La Incondicional", url: "canciones/la-incondicional.mp3" },
     { nombre: "Vivir lo Nuestro", url: "canciones/vivir-lo-nuestro.mp3" },
     { nombre: "Amiga Mía", url: "canciones/amiga-mia.mp3" },
-    { nombre: "Para Tu Amor", url: "canciones/para-tu-amor.mp3" },
-    { nombre: "Amiga Mía", url: "canciones/amiga-mia.mp3" },
-    { nombre: "Para Tu Amor", url: "canciones/para-tu-amor.mp3" },
+    { nombre: "Para Tu Amor", url: "canciones/para-tu-amor.mp3" }
     
 ];
 
