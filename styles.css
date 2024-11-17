@@ -19,25 +19,25 @@ body {
     color: #a1925a;
     border: 2px solid #C5B358;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px; /* Ajuste del padding para pantallas pequeñas */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    font-size: 2.5rem;
+    font-size: 1.8rem; /* Tamaño ajustado para pantallas más pequeñas */
     text-align: center;
     width: 90vw;
-    max-width: 600px;
-    margin-bottom: 20px;
+    max-width: 500px; /* Ajuste del max-width para pantallas pequeñas */
+    margin-bottom: 15px; /* Reducción de espacio entre el título y la introducción */
 }
 
 /* Introducción debajo del título */
 .introduccion {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Tamaño más pequeño para la introducción */
     color: #a1925a;
     text-align: center;
     width: 90vw;
-    max-width: 600px;
-    margin-bottom: 20px;
+    max-width: 500px; /* Ajuste del max-width */
+    margin-bottom: 15px;
     font-family: 'Great Vibes', cursive;
-    padding: 10px;
+    padding: 8px; /* Ajuste de padding */
     background-color: white;
     border: 2px solid #C5B358;
     border-radius: 10px;
@@ -46,9 +46,9 @@ body {
 
 /* Reproductor de audio */
 audio {
-    margin-top: 20px;
+    margin-top: 15px;
     width: 90vw;
-    max-width: 600px;
+    max-width: 500px; /* Ajuste del max-width */
     border-radius: 10px;
     border: 2px solid #C5B358;
     background-color: white;
@@ -56,16 +56,16 @@ audio {
 
 /* Contenedor de la lista de canciones */
 .playlist-container {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 /* Lista de canciones */
 #playlist {
     list-style-type: none;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 15px;
     width: 90vw;
-    max-width: 600px;
+    max-width: 500px; /* Ajuste del max-width */
 }
 
 /* Estilo para cada canción */
@@ -74,10 +74,10 @@ audio {
     color: #a1925a;
     border: 2px solid #C5B358;
     border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 8px; /* Ajuste del padding */
+    margin-bottom: 8px; /* Menor separación entre las canciones */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    font-size: 1.2rem;
+    font-size: 1rem; /* Tamaño de texto reducido */
     font-family: 'Great Vibes', cursive;
     display: flex;
     justify-content: space-between;
@@ -92,21 +92,42 @@ audio {
 
 @media only screen and (max-width: 768px) {
     .titulo-container {
-        font-size: 2rem;
-        padding: 15px;
+        font-size: 1.5rem; /* Ajuste aún más pequeño del tamaño del título */
+        padding: 12px;
     }
 
     .introduccion {
-        font-size: 1.2rem;
-        padding: 10px;
+        font-size: 1rem; /* Reducción del tamaño del texto de la introducción */
+        padding: 8px;
     }
 
     #playlist li {
-        font-size: 1.5rem;
-        padding: 15px;
+        font-size: 0.9rem; /* Tamaño de las canciones más pequeño */
+        padding: 10px;
     }
 
     audio {
-        font-size: 1.5rem;
+        font-size: 1rem; /* Tamaño del reproductor reducido */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .titulo-container {
+        font-size: 1.2rem; /* Tamaño aún más pequeño para pantallas pequeñas */
+        padding: 10px;
+    }
+
+    .introduccion {
+        font-size: 0.9rem; /* Reducción aún mayor para la introducción */
+        padding: 6px;
+    }
+
+    #playlist li {
+        font-size: 0.8rem; /* Reducción para adaptarse mejor a pantallas muy pequeñas */
+        padding: 8px;
+    }
+
+    audio {
+        font-size: 0.9rem; /* Tamaño del reproductor aún más pequeño */
     }
 }
